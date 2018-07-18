@@ -1,0 +1,12 @@
+.\objects\drv_max7456.o: ..\..\drivers\drv_max7456.c
+.\objects\drv_max7456.o: ..\..\drivers\common\drv_common.h
+.\objects\drv_max7456.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drv_max7456.o: ..\..\bsp\stm32f0xx.h
+.\objects\drv_max7456.o: ..\..\bsp\core_cm0.h
+.\objects\drv_max7456.o: ..\..\bsp\core_cmInstr.h
+.\objects\drv_max7456.o: ..\..\bsp\core_cmFunc.h
+.\objects\drv_max7456.o: ..\..\bsp\system_stm32f0xx.h
+.\objects\drv_max7456.o: ..\..\drivers\drv_max7456.h
+.\objects\drv_max7456.o: ..\..\drivers\common\drv_spi_hardware.h
+.\objects\drv_max7456.o: ..\..\drivers\common\drv_spi_software.h
+.\objects\drv_max7456.o: ..\..\drivers\common\drv_usart_hardware.h

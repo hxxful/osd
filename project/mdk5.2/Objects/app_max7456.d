@@ -1,0 +1,11 @@
+.\objects\app_max7456.o: ..\..\user\app_max7456.c
+.\objects\app_max7456.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\app_max7456.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\app_max7456.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\app_max7456.o: ..\..\system\sys.h
+.\objects\app_max7456.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\app_max7456.o: ..\..\system\sys_api.h
+.\objects\app_max7456.o: ..\..\system\sys_protocol.h
+.\objects\app_max7456.o: ..\..\user\app_max7456.h
+.\objects\app_max7456.o: ..\..\user\app_max7456_fonts.h
+.\objects\app_max7456.o: ..\..\libs\lib_math.h

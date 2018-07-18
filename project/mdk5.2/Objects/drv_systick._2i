@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\user -I ..\..\libs -I ..\..\system -I ..\..\drivers -I ..\..\drivers\common -I ..\..\bsp -I ..\..\bsp\STM32F0xx_StdPeriph_Driver\inc
+-I.\RTE\_demo
+-ID:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include
+-ID:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="523" -DSTM32F031x6 -DSTM32F0XX_HD
+-o .\objects\drv_systick.o --omf_browse .\objects\drv_systick.crf --depend .\objects\drv_systick.d --feedback ".\Objects\stm32f0xx_template.fed" "..\..\drivers\common\drv_systick.c"

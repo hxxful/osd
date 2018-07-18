@@ -1,0 +1,66 @@
+#include "drv_common.h"
+#include "drv_led.h"
+
+#define MAX_NUM_LED	1
+
+void drv_led_init(void)
+{
+	GPIO_InitTypeDef  GPIO_InitStructure;
+	
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);	
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_SetBits(GPIOA,GPIO_Pin_0); 
+}
+
+int8_t drv_led_write(uint8_t n, uint8_t cmd)
+{
+	if(1 < cmd){
+		return -1;
+	}
+	
+	if(MAX_NUM_LED < n){
+		return -2;
+	}
+	
+	switch(n){
+		case 0:
+			GPIO_WriteBit(GPIOA, GPIO_Pin_0, (BitAction)cmd);
+			break;
+		case 1:
+			GPIO_WriteBit(GPIOD, GPIO_Pin_2, (BitAction)cmd);
+			break;
+		default:
+			break;
+	}
+	
+	return 0;
+}
+
+int8_t drv_led_read(uint8_t n)
+{
+	uint8_t res = 0x00;
+	
+	if(MAX_NUM_LED < n){
+		return -1;
+	}
+
+	switch(n){
+		case 0:
+			res = GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_0);
+			break;
+		case 1:
+			res = GPIO_ReadOutputDataBit(GPIOD, GPIO_Pin_2);
+			break;
+		default:
+			break;
+	}
+
+	return (int8_t)res;
+}
+
+

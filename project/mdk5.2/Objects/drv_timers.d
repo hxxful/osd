@@ -1,0 +1,11 @@
+.\objects\drv_timers.o: ..\..\drivers\common\drv_timers.c
+.\objects\drv_timers.o: ..\..\system\sys.h
+.\objects\drv_timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drv_timers.o: ..\..\system\sys_api.h
+.\objects\drv_timers.o: ..\..\drivers\common\drv_common.h
+.\objects\drv_timers.o: ..\..\bsp\stm32f0xx.h
+.\objects\drv_timers.o: ..\..\bsp\core_cm0.h
+.\objects\drv_timers.o: ..\..\bsp\core_cmInstr.h
+.\objects\drv_timers.o: ..\..\bsp\core_cmFunc.h
+.\objects\drv_timers.o: ..\..\bsp\system_stm32f0xx.h
+.\objects\drv_timers.o: ..\..\drivers\common\drv_timers.h

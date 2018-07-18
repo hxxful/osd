@@ -1,0 +1,12 @@
+.\objects\sys.o: ..\..\system\sys.c
+.\objects\sys.o: ..\..\system\sys.h
+.\objects\sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sys.o: ..\..\system\sys_api.h
+.\objects\sys.o: ..\..\system\sys_clock.h
+.\objects\sys.o: ..\..\system\sys_delay.h
+.\objects\sys.o: ..\..\drivers\drv_led.h
+.\objects\sys.o: ..\..\drivers\common\drv_usart_hardware.h
+.\objects\sys.o: ..\..\drivers\common\drv_timers.h
+.\objects\sys.o: ..\..\drivers\drv_w25qxx.h
+.\objects\sys.o: ..\..\drivers\drv_max7456.h
+.\objects\sys.o: ..\..\drivers\common\drv_dma.h

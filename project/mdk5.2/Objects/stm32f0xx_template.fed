@@ -1,0 +1,57 @@
+;#<FEEDBACK># ARM Linker, 5060422: Last Updated: Mon Dec 18 15:47:51 2017
+;VERSION 0.2
+;FILE app_debug.o
+max7456_debug_write_frame <= USED 0
+;FILE app_led.o
+led_breathing_light <= USED 0
+;FILE app_max7456.o
+max7456_clear <= USED 0
+max7456_dma_send <= USED 0
+max7456_draw_allchar <= USED 0
+max7456_draw_assert <= USED 0
+max7456_init <= USED 0
+max7456_learn_char <= USED 0
+max7456_learn_fonts <= USED 0
+max7456_learn_logo <= USED 0
+max7456_offset <= USED 0
+max7456_read_reg <= USED 0
+max7456_reset <= USED 0
+max7456_write_reg <= USED 0
+;FILE app_speedgroup.o
+;FILE drv_clock.o
+__asm___11_drv_clock_c_5d646a67____REV16 <= USED 0
+__asm___11_drv_clock_c_5d646a67____REVSH <= USED 0
+drv_clock_init <= USED 0
+drv_clock_outside <= USED 0
+;FILE drv_common.o
+__asm___12_drv_common_c_646479c5____REV16 <= USED 0
+__asm___12_drv_common_c_646479c5____REVSH <= USED 0
+;FILE drv_led.o
+__asm___9_drv_led_c_30aff9da____REV16 <= USED 0
+__asm___9_drv_led_c_30aff9da____REVSH <= USED 0
+;FILE drv_max7456.o
+__asm___13_drv_max7456_c_6fa3e706____REV16 <= USED 0
+__asm___13_drv_max7456_c_6fa3e706____REVSH <= USED 0
+;FILE drv_spi_hardware.o
+__asm___18_drv_spi_hardware_c_e4bc3ac3____REV16 <= USED 0
+__asm___18_drv_spi_hardware_c_e4bc3ac3____REVSH <= USED 0
+drv_spi1_hardware_setspeed <= USED 0
+;FILE drv_systick.o
+__asm___13_drv_systick_c_bf7619ec____REV16 <= USED 0
+__asm___13_drv_systick_c_bf7619ec____REVSH <= USED 0
+;FILE drv_timers.o
+__asm___12_drv_timers_c_7976f09a____REV16 <= USED 0
+__asm___12_drv_timers_c_7976f09a____REVSH <= USED 0
+;FILE drv_usart_hardware.o
+__asm___20_drv_usart_hardware_c_txpoint____REV16 <= USED 0
+__asm___20_drv_usart_hardware_c_txpoint____REVSH <= USED 0
+drv_usart1_hardware_read <= USED 0
+;FILE main.o
+;FILE startup_stm32f031.o
+;FILE sys.o
+;FILE sys_api.o
+;FILE sys_clock.o
+;FILE sys_delay.o
+;FILE sys_printf.o
+_sys_exit <= USED 0
+;FILE sys_protocol.o

@@ -1,0 +1,44 @@
+#include "drv_common.h"
+#include "drv_max7456.h"
+#include "drv_spi_hardware.h"
+
+#define DRV_MAX7456_CS PAout(2)
+
+void drv_max7456_init(void)
+{
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	RCC_AHBPeriphClockCmd(	RCC_AHBPeriph_GPIOA, ENABLE );
+
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+ 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+ 	GPIO_Init(GPIOA, &GPIO_InitStructure);
+ 	GPIO_SetBits(GPIOA, GPIO_Pin_2);
+	
+	drv_spi1_init();
+	drv_spi1_setspeed(SPI_BaudRatePrescaler_4);
+	
+}
+
+void drv_max7456_connect(void)
+{
+	DRV_MAX7456_CS = 0;
+}
+
+void drv_max7456_disconnect(void)
+{
+	DRV_MAX7456_CS = 1;
+}
+
+uint8_t drv_max7456_write(uint8_t ch)
+{
+	drv_spi1_write(ch);
+	return 0;
+}
+
+uint8_t drv_max7456_read(void)
+{
+	return drv_spi1_read();
+}

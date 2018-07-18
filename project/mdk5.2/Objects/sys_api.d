@@ -1,0 +1,9 @@
+.\objects\sys_api.o: ..\..\system\sys_api.c
+.\objects\sys_api.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sys_api.o: ..\..\system\sys_api.h
+.\objects\sys_api.o: ..\..\system\sys_delay.h
+.\objects\sys_api.o: ..\..\system\sys_protocol.h
+.\objects\sys_api.o: ..\..\drivers\drv_led.h
+.\objects\sys_api.o: ..\..\drivers\common\drv_clock.h
+.\objects\sys_api.o: ..\..\drivers\drv_w25qxx.h
+.\objects\sys_api.o: ..\..\drivers\drv_max7456.h

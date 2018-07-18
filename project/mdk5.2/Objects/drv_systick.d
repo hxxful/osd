@@ -1,0 +1,9 @@
+.\objects\drv_systick.o: ..\..\drivers\common\drv_systick.c
+.\objects\drv_systick.o: ..\..\drivers\common\drv_common.h
+.\objects\drv_systick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drv_systick.o: ..\..\bsp\stm32f0xx.h
+.\objects\drv_systick.o: ..\..\bsp\core_cm0.h
+.\objects\drv_systick.o: ..\..\bsp\core_cmInstr.h
+.\objects\drv_systick.o: ..\..\bsp\core_cmFunc.h
+.\objects\drv_systick.o: ..\..\bsp\system_stm32f0xx.h
+.\objects\drv_systick.o: ..\..\drivers\common\drv_systick.h

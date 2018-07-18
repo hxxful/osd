@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\app_speedgroup.o"
+".\objects\app_led.o"
+".\objects\app_max7456.o"
+".\objects\app_debug.o"
+".\objects\lib_kalman.o"
+".\objects\lib_math.o"
+".\objects\sys.o"
+".\objects\sys_api.o"
+".\objects\sys_clock.o"
+".\objects\sys_delay.o"
+".\objects\sys_printf.o"
+".\objects\sys_protocol.o"
+".\objects\drv_common.o"
+".\objects\drv_clock.o"
+".\objects\drv_systick.o"
+".\objects\drv_timers.o"
+".\objects\drv_spi_hardware.o"
+".\objects\drv_usart_hardware.o"
+".\objects\drv_max7456.o"
+".\objects\drv_led.o"
+".\objects\startup_stm32f031.o"
+--library_type=microlib --strict --scatter ".\Objects\stm32f0xx_template.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\stm32f0xx_template.map" -o .\Objects\stm32f0xx_template.axf
